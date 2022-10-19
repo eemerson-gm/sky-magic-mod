@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sky_magic:mortarandpestle"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:charcoal"
+    },
+    {
+      "item": "sky_magic:naturedust"
+    }
+  ],
+  "result": {
+    "item": "sky_magic:fierydust",
+    "count": 2
+  }
+}
