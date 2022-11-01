@@ -15,12 +15,14 @@ import net.kupoapo.skymagic.SkyMagicMod;
 
 public class WoodenMacheteBlockDestroyedWithToolProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
+		String command = "";
 		if ((world.getBlockState(new BlockPos(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:leaves")))) {
-			SkyMagicMod.LOGGER.info("Mined a leaf");
-			for (int index0 = 0; index0 < (int) (100); index0++) {
+			command = "loot spawn ~ ~ ~ loot " + "minecraft:blocks/" + GetBlockIdProcedure.execute(world, x, y, z);
+			SkyMagicMod.LOGGER.info(command);
+			for (int index0 = 0; index0 < (int) (3); index0++) {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level,
-							4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "loot spawn ~ ~ ~ mine ~ ~ ~ ");
+							4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), command);
 			}
 		}
 	}
