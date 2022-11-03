@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:sand"
+    },
+    "title": {
+      "translate": "advancements.adv_sand.title"
+    },
+    "description": {
+      "translate": "advancements.adv_sand.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_sand": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "sky_magic:adv_nature_dust"
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "sky_magic:naturedust"
+    },
+    "title": {
+      "translate": "advancements.adv_nature_dust.title"
+    },
+    "description": {
+      "translate": "advancements.adv_nature_dust.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_nature_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sky_magic:naturedust"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "sky_magic:adv_mortar_and_pestle"
+}

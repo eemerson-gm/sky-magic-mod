@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:cobblestone"
+    },
+    "title": {
+      "translate": "advancements.adv_cobblestone.title"
+    },
+    "description": {
+      "translate": "advancements.adv_cobblestone.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_cobblestone": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "sky_magic:adv_sand"
+}

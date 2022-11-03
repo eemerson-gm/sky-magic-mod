@@ -1,7 +1,21 @@
 {
   "item.sky_magic.naturedust": "Nature Dust",
-  "itemGroup.tabsky_magictab": "Sky Magic",
-  "item.sky_magic.mortarandpestle": "Mortar and Pestle",
+  "advancements.root.title": "Started Slashing",
+  "advancements.adv_nature_dust.title": "Circle of Life",
+  "advancements.adv_fiery_dust.title": "Spark of Energy",
+  "advancements.adv_ores.descr": "Aquire all Vanilla ores using Fiery Dust on Stone",
   "item.sky_magic.fierydust": "Fiery Dust",
-  "item.sky_magic.wooden_machete": "Wooden Machete"
+  "item.sky_magic.wooden_machete": "Wooden Machete",
+  "advancements.adv_sand.descr": "Transmute Logs into Sand using Natue Dust",
+  "advancements.adv_sand.title": "Breaking Down",
+  "advancements.adv_ores.title": "No Cave Required",
+  "itemGroup.tabsky_magictab": "Sky Magic",
+  "advancements.root.descr": "Craft a Machete to get more drops from leaves",
+  "item.sky_magic.mortarandpestle": "Mortar and Pestle",
+  "advancements.adv_mortar_and_pestle.descr": "Craft a Mortar and Pestle to make magic dusts",
+  "advancements.adv_fiery_dust.descr": "Craft Fiery Dust for geological transmutation",
+  "advancements.adv_mortar_and_pestle.title": "Essence Extration",
+  "advancements.adv_cobblestone.title": "Sand and Stone",
+  "advancements.adv_cobblestone.descr": "Transmute Sandstone into Cobblestone using Nature Dust",
+  "advancements.adv_nature_dust.descr": "Craft Nature Dust for natural transmuation"
 }

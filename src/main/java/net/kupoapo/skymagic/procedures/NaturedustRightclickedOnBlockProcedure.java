@@ -23,22 +23,28 @@ public class NaturedustRightclickedOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		BlockState block_type = Blocks.AIR.defaultBlockState();
-		if ((world.getBlockState(new BlockPos(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:saplings")))) {
-			block_type = (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:saplings")))
+		BlockState block_source = Blocks.AIR.defaultBlockState();
+		BlockState block_converted = Blocks.AIR.defaultBlockState();
+		block_source = (world.getBlockState(new BlockPos(x, y, z)));
+		if (block_source.is(BlockTags.create(new ResourceLocation("minecraft:saplings")))) {
+			block_source = (ForgeRegistries.BLOCKS.tags().getTag(BlockTags.create(new ResourceLocation("minecraft:saplings")))
 					.getRandomElement(new Random()).orElseGet(() -> Blocks.AIR)).defaultBlockState();
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:logs")))) {
-			block_type = Blocks.COBBLESTONE.defaultBlockState();
+		} else if (block_source.is(BlockTags.create(new ResourceLocation("minecraft:logs")))) {
+			block_source = Blocks.SAND.defaultBlockState();
+		} else if (block_source.getBlock() == Blocks.SANDSTONE) {
+			block_source = Blocks.COBBLESTONE.defaultBlockState();
+		} else if (block_source.getBlock() == Blocks.RED_SANDSTONE) {
+			block_source = Blocks.DRIPSTONE_BLOCK.defaultBlockState();
 		}
-		if (!(block_type.getBlock() == Blocks.AIR)) {
+		if (!(block_converted.getBlock() == Blocks.AIR)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
-			(itemstack).setCount((int) ((itemstack).getCount() - 1));
+			(itemstack).shrink(1);
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 5);
 			if (!world.isClientSide()) {
-				world.setBlock(new BlockPos(x, y, z), block_type, 3);
-				world.levelEvent(2001, new BlockPos(x, y, z), Block.getId(block_type));
+				world.setBlock(new BlockPos(x, y, z), block_converted, 3);
+				world.levelEvent(2001, new BlockPos(x, y, z), Block.getId(block_converted));
 			}
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.COMPOSTER, x, y, z, 20, 0.75, 0.75, 0.75, 1);
