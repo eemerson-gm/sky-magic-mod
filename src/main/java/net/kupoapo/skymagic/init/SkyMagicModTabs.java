@@ -17,7 +17,7 @@ public class SkyMagicModTabs {
 		TAB_SKY_MAGICTAB = new CreativeModeTab("tabsky_magictab") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(SkyMagicModItems.NATUREDUST.get());
+				return new ItemStack(SkyMagicModItems.NATURE_DUST.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

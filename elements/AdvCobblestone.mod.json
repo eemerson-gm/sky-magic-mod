@@ -1,9 +1,9 @@
 {
-  "_fv": 33,
+  "_fv": 34,
   "_type": "achievement",
   "definition": {
     "achievementName": "Sand and Stone",
-    "achievementDescription": "Transmute Sandstone into Cobblestone using Nature Dust",
+    "achievementDescription": "Transmute [Sandstone] into Cobblestone using Nature Dust",
     "achievementIcon": {
       "value": "Blocks.COBBLESTONE"
     },

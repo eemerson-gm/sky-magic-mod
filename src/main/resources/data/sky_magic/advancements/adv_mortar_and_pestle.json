@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "sky_magic:mortarandpestle"
+      "item": "sky_magic:mortar_and_pestle"
     },
     "title": {
       "translate": "advancements.adv_mortar_and_pestle.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "sky_magic:mortarandpestle"
+              "sky_magic:mortar_and_pestle"
             ],
             "count": {
               "min": 1,

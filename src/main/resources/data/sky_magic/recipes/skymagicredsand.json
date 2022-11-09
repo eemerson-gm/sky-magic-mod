@@ -5,17 +5,17 @@
       "item": "sky_magic:mortar_and_pestle"
     },
     {
-      "item": "minecraft:gunpowder"
+      "item": "minecraft:red_dye"
     },
     {
-      "item": "minecraft:charcoal"
+      "item": "minecraft:sand"
     },
     {
-      "item": "sky_magic:nature_dust"
+      "item": "minecraft:sand"
     }
   ],
   "result": {
-    "item": "sky_magic:fiery_dust",
+    "item": "minecraft:red_sand",
     "count": 2
   }
 }

@@ -6,7 +6,7 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mortarandpestle"
+      "registry_name": "mortar_and_pestle"
     },
     {
       "name": "Naturedust",
@@ -14,7 +14,7 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "naturedust"
+      "registry_name": "nature_dust"
     },
     {
       "name": "Skymagicnaturedustrecipe",
@@ -86,7 +86,7 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fierydust"
+      "registry_name": "fiery_dust"
     },
     {
       "name": "Skymagicfierydust",
@@ -263,31 +263,173 @@
       "locked_code": true,
       "registry_name": "adv_ores",
       "path": "~/Other"
+    },
+    {
+      "name": "AdvMachete",
+      "type": "achievement",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_machete",
+      "path": "~/Other"
+    },
+    {
+      "name": "AdvWater",
+      "type": "achievement",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_water",
+      "path": "~/Other"
+    },
+    {
+      "name": "Skymagicredsand",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skymagicredsand",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Skymagicwaterydust",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skymagicwaterydust",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DustRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dust_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "ConfigOnLoad",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "config_on_load",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "WateryDust",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watery_dust"
+    },
+    {
+      "name": "WaterydustRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waterydust_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "convert_to",
+      "type": "blockstate",
+      "scope": "global",
+      "value": "Blocks.AIR.defaultBlockState()"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.sky_magic.naturedust": "Nature Dust",
-      "advancements.root.title": "Started Slashing",
       "advancements.adv_nature_dust.title": "Circle of Life",
-      "advancements.adv_fiery_dust.title": "Spark of Energy",
-      "advancements.adv_ores.descr": "Aquire all Vanilla ores using Fiery Dust on Stone",
-      "item.sky_magic.fierydust": "Fiery Dust",
-      "item.sky_magic.wooden_machete": "Wooden Machete",
-      "advancements.adv_sand.descr": "Transmute Logs into Sand using Natue Dust",
+      "advancements.adv_sand.descr": "Transmute [Logs] into Sand using Natue Dust",
       "advancements.adv_sand.title": "Breaking Down",
-      "advancements.adv_ores.title": "No Cave Required",
-      "itemGroup.tabsky_magictab": "Sky Magic",
-      "advancements.root.descr": "Craft a Machete to get more drops from leaves",
-      "item.sky_magic.mortarandpestle": "Mortar and Pestle",
+      "advancements.adv_water.descr": "Transmute a [Lapis Block] into Water using Natue Dust",
       "advancements.adv_mortar_and_pestle.descr": "Craft a Mortar and Pestle to make magic dusts",
       "advancements.adv_fiery_dust.descr": "Craft Fiery Dust for geological transmutation",
       "advancements.adv_mortar_and_pestle.title": "Essence Extration",
       "advancements.adv_cobblestone.title": "Sand and Stone",
-      "advancements.adv_cobblestone.descr": "Transmute Sandstone into Cobblestone using Nature Dust",
-      "advancements.adv_nature_dust.descr": "Craft Nature Dust for natural transmuation"
+      "advancements.adv_cobblestone.descr": "Transmute [Sandstone] into Cobblestone using Nature Dust",
+      "item.sky_magic.nature_dust": "Nature Dust",
+      "advancements.adv_nature_dust.descr": "Craft Nature Dust for natural transmuation",
+      "advancements.root.title": "Sky Magic",
+      "advancements.adv_fiery_dust.title": "Spark of Energy",
+      "item.sky_magic.fiery_dust": "Fiery Dust",
+      "advancements.adv_ores.descr": "Transumte [Stone] to aquire all vanilla ores",
+      "item.sky_magic.wooden_machete": "Wooden Machete",
+      "advancements.adv_machete.title": "Start Chopping",
+      "advancements.adv_water.title": "Aqua Vita",
+      "advancements.adv_machete.descr": "Craft a Machete to get more drops from leaves",
+      "item.sky_magic.watery_dust": "Watery Dust",
+      "advancements.adv_ores.title": "No Cave Required",
+      "itemGroup.tabsky_magictab": "Sky Magic",
+      "advancements.root.descr": "Harness the power of nature to transform materials",
+      "item.sky_magic.mortar_and_pestle": "Mortar and Pestle"
     }
   },
   "foldersRoot": {
@@ -327,5 +469,5 @@
     "modElementsPackage": "net.kupoapo.skymagic",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200234517
+  "mcreatorVersion": 202200345616
 }

@@ -1,12 +1,12 @@
 {
-  "_fv": 33,
+  "_fv": 34,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "nature_dust",
     "customModelName": "Normal",
     "name": "Nature Dust",
-    "rarity": "COMMON",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:SkyMagictab"
     },

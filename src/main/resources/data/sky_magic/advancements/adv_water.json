@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:water_bucket"
+    },
+    "title": {
+      "translate": "advancements.adv_water.title"
+    },
+    "description": {
+      "translate": "advancements.adv_water.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_water": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "sky_magic:adv_nature_dust"
+}

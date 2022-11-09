@@ -7,22 +7,22 @@
     "cookingTime": 200,
     "recipeRetstackSize": 2,
     "group": "",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": "CUSTOM:Mortarandpestle"
       },
       {
-        "value": "Items.GUNPOWDER"
+        "value": "CUSTOM:Naturedust"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.COAL#1"
+        "value": "Items.POTIONITEM"
       },
       {
-        "value": "CUSTOM:Naturedust"
+        "value": "Items.DYE#15"
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Fierydust"
+      "value": "CUSTOM:WateryDust"
     },
-    "name": "skymagicfierydust",
+    "name": "skymagicwaterydust",
     "namespace": "mod"
   }
 }

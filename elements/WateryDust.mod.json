@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "fiery_dust",
+    "texture": "watery_dust",
     "customModelName": "Normal",
-    "name": "Fiery Dust",
+    "name": "Watery Dust",
     "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:SkyMagictab"
@@ -30,7 +30,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedOnBlock": {
-      "name": "FierydustRightclickedOnBlock"
+      "name": "WaterydustRightclickedOnBlock"
     },
     "isFood": false,
     "nutritionalValue": 4,

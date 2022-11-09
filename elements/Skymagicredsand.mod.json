@@ -13,16 +13,16 @@
         "value": "CUSTOM:Mortarandpestle"
       },
       {
-        "value": "Items.GUNPOWDER"
+        "value": "Items.DYE#1"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.COAL#1"
+        "value": "Blocks.SAND#0"
       },
       {
-        "value": "CUSTOM:Naturedust"
+        "value": "Blocks.SAND#0"
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Fierydust"
+      "value": "Blocks.SAND#1"
     },
-    "name": "skymagicfierydust",
+    "name": "skymagicredsand",
     "namespace": "mod"
   }
 }

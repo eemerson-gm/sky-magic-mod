@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "sky_magic:mortar_and_pestle"
+    },
+    "1": {
+      "item": "sky_magic:nature_dust"
+    },
+    "2": {
+      	"type": "forge:nbt",
+		"item": "minecraft:potion",
+		"nbt": "{Potion:'minecraft:water'}"
+    },
+    "3": {
+      "item": "minecraft:bone_meal"
+    }
+  },
+  "result": {
+    "item": "sky_magic:watery_dust",
+    "count": 2
+  }
+}

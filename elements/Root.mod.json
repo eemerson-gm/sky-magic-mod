@@ -1,16 +1,16 @@
 {
-  "_fv": 33,
+  "_fv": 34,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Started Slashing",
-    "achievementDescription": "Craft a Machete to get more drops from leaves",
+    "achievementName": "Sky Magic",
+    "achievementDescription": "Harness the power of nature to transform materials",
     "achievementIcon": {
-      "value": "CUSTOM:WoodenMachete"
+      "value": "Blocks.SAPLING#0"
     },
-    "background": "Default",
+    "background": "packed_ice.png",
     "disableDisplay": false,
-    "showPopup": true,
-    "announceToChat": true,
+    "showPopup": false,
+    "announceToChat": false,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],
@@ -20,6 +20,6 @@
     "parent": {
       "value": "No parent: root"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"26\" y=\"34\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:WoodenMachete</field></block></value><next><block type=\"advancement_trigger\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"tick\" x=\"62\" y=\"77\"><next><block type=\"advancement_trigger\"></block></next></block></xml>"
   }
 }

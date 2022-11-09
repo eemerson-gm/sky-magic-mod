@@ -11,14 +11,14 @@ import net.kupoapo.skymagic.init.SkyMagicModTabs;
 
 public class NaturedustItem extends Item {
 	public NaturedustItem() {
-		super(new Item.Properties().tab(SkyMagicModTabs.TAB_SKY_MAGICTAB).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(SkyMagicModTabs.TAB_SKY_MAGICTAB).stacksTo(64).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
-		InteractionResult retval = super.useOn(context);
+		super.useOn(context);
 		NaturedustRightclickedOnBlockProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(),
 				context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
-		return retval;
+		return InteractionResult.SUCCESS;
 	}
 }

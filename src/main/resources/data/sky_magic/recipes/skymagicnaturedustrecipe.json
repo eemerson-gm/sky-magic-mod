@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "sky_magic:mortarandpestle"
+      "item": "sky_magic:mortar_and_pestle"
     },
     {
       "tag": "minecraft:saplings"
@@ -30,7 +30,7 @@
     }
   ],
   "result": {
-    "item": "sky_magic:naturedust",
+    "item": "sky_magic:nature_dust",
     "count": 2
   }
 }

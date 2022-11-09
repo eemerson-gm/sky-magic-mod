@@ -1,8 +1,8 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
+    "background": "sky_magic:textures/screens/packed_ice.png",
     "icon": {
-      "item": "sky_magic:wooden_machete"
+      "item": "minecraft:oak_sapling"
     },
     "title": {
       "translate": "advancements.root.title"
@@ -11,26 +11,13 @@
       "translate": "advancements.root.descr"
     },
     "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
+    "show_toast": false,
+    "announce_to_chat": false,
     "hidden": false
   },
   "criteria": {
     "root": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "sky_magic:wooden_machete"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
+      "trigger": "minecraft:tick"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "sky_magic:naturedust"
+      "item": "sky_magic:nature_dust"
     },
     "title": {
       "translate": "advancements.adv_nature_dust.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "sky_magic:naturedust"
+              "sky_magic:nature_dust"
             ],
             "count": {
               "min": 1,

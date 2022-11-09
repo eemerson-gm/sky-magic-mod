@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "sky_magic:fiery_dust"
+      "item": "sky_magic:wooden_machete"
     },
     "title": {
-      "translate": "advancements.adv_fiery_dust.title"
+      "translate": "advancements.adv_machete.title"
     },
     "description": {
-      "translate": "advancements.adv_fiery_dust.descr"
+      "translate": "advancements.adv_machete.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "adv_fiery_dust": {
+    "adv_machete": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "sky_magic:fiery_dust"
+              "sky_magic:wooden_machete"
             ],
             "count": {
               "min": 1,
@@ -32,5 +32,5 @@
       }
     }
   },
-  "parent": "sky_magic:adv_nature_dust"
+  "parent": "sky_magic:root"
 }
